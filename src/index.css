@@ -54,6 +54,12 @@ ul.header li a {
   align-items: left;
 }
 
+.NBA img {
+  width: 100px;
+  height: 100px;
+}
+
+
 .NBA p {
   font-weight: bold;
 }
