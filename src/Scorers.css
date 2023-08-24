@@ -1,0 +1,71 @@
+/* Scorers.css */
+
+.scorers-list {
+  margin-top: 20px;
+}
+
+.scorer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px; /* Increased padding for better spacing */
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+.scorer:hover {
+  background-color: rgb(248, 177, 130);
+}
+
+.scorer-info {
+  flex: 1;
+}
+
+.scorer-name {
+  background-image: url("background.png");
+  background-size: repeat;
+  border: 3px solid rgba(0, 0, 0, 0.849);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align:center;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.scorer-points {
+  font-size: 22px;
+  color: #666;
+}
+
+.player-image {
+  width: 180px; /* Increase the image size */
+  height: 180px; /* Increase the image size */
+  margin-left: 20px;
+  border-radius: 50%;
+}
+
+.player-description {
+  position: absolute;
+  top: 0;
+  left: 110px; /* Adjust left position for larger image */
+  display: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 14px; /* Slightly larger font size */
+  color: #333;
+  max-width: 240px; /* Increase max width for better readability */
+}
+
+.scorer:hover .player-description {
+  display: block;
+  transform: scale(2.2); /* Increase the size by 10% on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+
